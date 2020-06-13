@@ -17,6 +17,6 @@ void main()
   for(i=0;i<3;i++)
     cout<<'6';
   system("pause");
-{
+}
 
 ```
