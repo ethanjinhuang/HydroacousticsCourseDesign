@@ -1,0 +1,62 @@
+*SoftWare Version 3.0  2018/12/27
+
+*HEADER
+     PLATFORM NUMBER       :2903381
+     CYCLE NUMBER          :016
+     DATE CREATION         :20191202155316
+     DATE UPDATE           :20191206065420
+     PROJECT NAME          :Routine-JMA
+     PI NAME               :JMA
+     INSTRUMENT TYPE       :APEX
+     FLOAT SERIAL NO       :8563
+     FIRMWARE VERSION      :2.11.3
+     WMO INSTRUMENT TYPE   :846
+     TRANSMISSION SYSTEM   :ARGOS
+     POSITIONING SYSTEM    :ARGOS
+     SAMPLE DIRECTION      :A(A=Ascend; D=Descend)
+     DATA MODE             :A(R=Real Time; D=Delayed Mode; A=Real Time Adjusted)
+     JULIAN DAY            :25537.4942 (days since 1950-01-01 00:00:00 UTC)
+     DATE                  :2019-12-02
+     QC FLAG FOR DATE      :1
+*LOCATION
+     LATITUDE              :37.242  
+     LONGITUDE             :141.597 
+     QC FLAG FOR LOCATION  :1
+*FILE
+     COLUMN 1              :Pressure (dbar)                             F7.1
+     COLUMN 2              :Corrected Pressure (dbar)                   F7.1
+     COLUMN 3              :Quality on Pressure                         I3
+     COLUMN 4              :Temperature (degree_Celsius)                F9.3
+     COLUMN 5              :Corrected Temperature (degree_Celsius)      F9.3
+     COLUMN 6              :Quality on Temperature                      I3
+     COLUMN 7              :Salinity (PSU)                              F9.3
+     COLUMN 8              :Corrected Salinity (PSU)                    F9.3
+     COLUMN 9              :Quality on Salinity                         I3
+==========================================================================
+    6.8    6.8  1   15.353   15.353  1   34.043   34.043  1
+   19.3   19.3  1   15.313   15.313  1   34.035   34.035  1
+   28.9   28.9  1   15.240   15.240  1   34.027   34.027  1
+   39.0   39.0  1   15.029   15.029  1   33.985   33.985  1
+   48.9   48.9  1   15.018   15.018  1   33.986   33.986  1
+   59.8   59.8  1   14.619   14.619  1   34.046   34.046  1
+   69.7   69.7  1   13.572   13.572  1   34.260   34.260  1
+   77.1   77.1  1   13.220   13.220  1   34.336   34.336  1
+   87.4   87.4  1   12.446   12.446  1   34.330   34.330  1
+   99.5   99.5  1   12.226   12.226  1   34.328   34.328  1
+  109.0  109.0  1   11.511   11.511  1   34.317   34.317  1
+  118.4  118.4  1   10.807   10.807  1   34.275   34.275  1
+  128.5  128.5  1   10.504   10.504  1   34.249   34.249  1
+  139.4  139.4  1   10.418   10.418  1   34.234   34.234  1
+  149.4  149.4  1    9.157    9.157  1   34.072   34.072  1
+  159.1  159.1  1    8.635    8.635  1   34.001   34.001  1
+  166.8  166.8  1    8.524    8.524  1   33.994   33.994  1
+  176.7  176.7  1    8.254    8.254  1   33.971   33.971  1
+  189.3  189.3  1    7.744    7.744  1   33.917   33.917  1
+  198.6  198.6  1    7.668    7.668  1   33.923   33.923  1
+  219.6  219.6  1    7.273    7.273  1   33.887   33.887  1
+  234.8  234.8  4    6.504    6.504  4   33.824   33.824  4
+  234.8  234.8  4    6.499    6.499  4   33.819   33.819  4
+  234.8  234.8  4    6.495    6.495  4   33.824   33.824  4
+  234.8  234.8  4    6.492    6.492  4   33.821   33.821  4
+  234.8  234.8  4    6.495    6.495  4   33.821   33.821  4
+  234.8  234.8  4    6.478    6.478  4   33.820   33.820  4
