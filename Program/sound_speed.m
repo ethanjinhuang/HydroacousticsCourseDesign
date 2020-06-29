@@ -1,4 +1,4 @@
-function c = sound_speed(temper,salt,deep,data_size)
+function [c,Ha] = sound_speed(temper,salt,deep,data_size)
 %-------声速计算程序------
 %   输入：温度（n x n）、盐度（n x n）、深度（n x n）、矩阵纬度 ( n )
 %   输出：声速矩阵c（n x n）
