@@ -22,8 +22,6 @@ for i=1:1:deepth_num
 end
 %% 计算声速梯度
 A = zeros(row_num,column_num,deepth_num - 1);
-for i=2:1:deepth_num
-   A(:,:,i - 1) = (c(:,:,i) - c(:,:,i-1))./  c(:,:,i) * (deep(i) - deep(i-1));
-end
+
 
 end

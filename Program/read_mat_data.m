@@ -14,10 +14,11 @@ function [Salt,Temp,Deep] = read_mat_data(year,month,lat_min_num,lat_max_num,log
 % ----------END----------
 
 filename = strcat('BOA_Argo_',num2str(year),'_',num2str(month,'%02d'),'.mat');
-[latmin,latmax,logmin,logmax]=tran(lat_min_num,lat_max_num,log_min_num,log_max_num,NS,EW);
+[latmin,latmax,logmin,logmax]=tran_pos(lat_min_num,lat_max_num,log_min_num,log_max_num,NS,EW);
 file_dir = strcat('..\\DATA\\全球海洋Argo网格数据集\\',filename);
 load(file_dir);
 Salt=salt(logmin:logmax,latmin:latmax,:);
 Temp=temp(logmin:logmax,latmin:latmax,:);
 Deep=pres;
+
 end
