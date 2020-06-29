@@ -1,0 +1,65 @@
+*SoftWare Version 3.0  2018/12/27
+
+*HEADER
+     PLATFORM NUMBER       :2902585
+     CYCLE NUMBER          :199
+     DATE CREATION         :20191228121727
+     DATE UPDATE           :20191228121727
+     PROJECT NAME          :CHINA ARGO EQUIVALENT
+     PI NAME               :ZENGHONG LIU
+     INSTRUMENT TYPE       :PROVOR
+     FLOAT SERIAL NO       :OIN-13CH-S31-12
+     FIRMWARE VERSION      :N/A
+     WMO INSTRUMENT TYPE   :841
+     TRANSMISSION SYSTEM   :ARGOS
+     POSITIONING SYSTEM    :ARGOS
+     SAMPLE DIRECTION      :A(A=Ascend; D=Descend)
+     DATA MODE             :A(R=Real Time; D=Delayed Mode; A=Real Time Adjusted)
+     JULIAN DAY            :25563.0466 (days since 1950-01-01 00:00:00 UTC)
+     DATE                  :2019-12-28
+     QC FLAG FOR DATE      :1
+*LOCATION
+     LATITUDE              :45.099  
+     LONGITUDE             :140.651 
+     QC FLAG FOR LOCATION  :1
+*FILE
+     COLUMN 1              :Pressure (dbar)                             F7.1
+     COLUMN 2              :Corrected Pressure (dbar)                   F7.1
+     COLUMN 3              :Quality on Pressure                         I3
+     COLUMN 4              :Temperature (degree_Celsius)                F9.3
+     COLUMN 5              :Corrected Temperature (degree_Celsius)      F9.3
+     COLUMN 6              :Quality on Temperature                      I3
+     COLUMN 7              :Salinity (PSU)                              F9.3
+     COLUMN 8              :Corrected Salinity (PSU)                    F9.3
+     COLUMN 9              :Quality on Salinity                         I3
+==========================================================================
+    2.0    2.0  1    5.509    5.509  1   34.176   34.176  1
+    4.0    4.0  1    5.512    5.512  1   34.178   34.178  1
+    7.0    7.0  1    5.513    5.513  1   34.178   34.178  1
+    9.0    9.0  1    5.513    5.513  1   34.178   34.178  1
+   16.0   16.0  1    5.513    5.513  1   34.175   34.175  1
+   26.0   26.0  1    5.505    5.505  1   34.163   34.163  1
+   36.0   36.0  1    4.831    4.831  1   34.146   34.146  1
+   45.0   45.0  1    4.160    4.160  1   34.134   34.134  1
+   56.0   56.0  1    3.895    3.895  1   34.125   34.125  1
+   65.0   65.0  1    3.727    3.727  1   34.116   34.116  1
+   75.0   75.0  1    3.558    3.558  1   34.109   34.109  1
+   86.0   86.0  1    3.547    3.547  1   34.114   34.114  1
+   95.0   95.0  1    3.541    3.541  1   34.113   34.113  1
+  105.0  105.0  1    3.374    3.374  1   34.095   34.095  1
+  116.0  116.0  1    3.290    3.290  1   34.086   34.086  1
+  126.0  126.0  1    3.275    3.275  1   34.083   34.083  1
+  136.0  136.0  1    3.170    3.170  1   34.074   34.074  1
+  145.0  145.0  1    2.841    2.841  1   34.068   34.068  1
+  155.0  155.0  1    2.563    2.563  1   34.058   34.058  1
+  166.0  166.0  1    2.346    2.346  1   34.056   34.056  1
+  176.0  176.0  1    2.183    2.183  1   34.054   34.054  1
+  186.0  186.0  1    2.103    2.103  1   34.055   34.055  1
+  195.0  195.0  1    2.038    2.038  1   34.055   34.055  1
+  212.0  212.0  1    1.867    1.867  1   34.052   34.052  1
+  238.0  238.0  1    1.650    1.650  1   34.046   34.046  1
+  263.0  263.0  1    1.444    1.444  1   34.044   34.044  1
+  289.0  289.0  1    1.290    1.290  1   34.044   34.044  1
+  313.0  313.0  1    1.172    1.172  1   34.043   34.043  1
+  336.0  336.0  1    1.016    1.016  1   34.046   34.046  1
+  362.0  362.0  1    0.862    0.862  1   34.051   34.051  1
