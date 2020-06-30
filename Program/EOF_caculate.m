@@ -35,6 +35,10 @@ PC = EOF'*X;
 
 E = diag(sort(diag(E),'descend'));
 
+% 计算贡献率
+E_exp = diag(E/sum(sum(E))); 
+
+
 % EOF = fliplr(flipud(E));
 % lambda = diag(E);
 % EOF = fliplr(EOF);
