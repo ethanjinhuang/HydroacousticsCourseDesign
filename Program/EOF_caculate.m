@@ -20,6 +20,8 @@ C = X*X'/L;
 [EOF,E] = eig(C);
 PC = EOF'*X;
 
+E = diag(sort(diag(E),'descend'));
+
 % EOF = fliplr(flipud(E));
 % lambda = diag(E);
 % EOF = fliplr(EOF);
