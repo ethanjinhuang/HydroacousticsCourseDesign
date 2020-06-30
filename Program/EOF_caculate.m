@@ -60,7 +60,9 @@ plot(real_data1,Deep,'r-');
 set(gca,'YDir','reverse');
 hold on;
 plot(approx_c_1,fliplr(Standard_deep),'bx');
-legend('Org_data','1-stair','Location','southeast');
+xlabel('声速m/s');
+ylabel('深度m');
+legend('Org-data','1-stair','Location','southeast');
 hold off;
 
 subplot(1,3,2);
@@ -68,7 +70,9 @@ plot(real_data1,Deep,'r-');
 set(gca,'YDir','reverse');
 hold on;
 plot(approx_c_2,fliplr(Standard_deep),'bx');
-legend('Org_data','2-stair','Location','southeast');
+xlabel('声速m/s');
+ylabel('深度m');
+legend('Org-data','2-stair','Location','southeast');
 hold off;
 
 subplot(1,3,3);
@@ -76,7 +80,9 @@ plot(real_data1,Deep,'r-');
 set(gca,'YDir','reverse');
 hold on;
 plot(approx_c_3,fliplr(Standard_deep),'bx');
-legend('Org_data','3-stair','Location','southeast');
+xlabel('声速m/s');
+ylabel('深度m');
+legend('Org-data','3-stair','Location','southeast');
 hold off;
 
 %approx_c = mean_c + EOF(:,1)*E(1,1)+EOF(:,2)*E(2,2)+EOF(:,3)*E(3,3)+ EOF(:,11).*E(11,11)+EOF(:,12).*E(12,12);
