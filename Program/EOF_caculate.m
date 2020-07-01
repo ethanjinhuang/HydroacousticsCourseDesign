@@ -8,7 +8,7 @@ Standard_deep = [0,10,20,30,50,70,75,100,125,150,200,250,300,400,500,600,700,800
 matrix_c = zeros(0,0);
 for year = 2015:2019
     for month = 1:12
-        [Salt,Temp,Deep]=read_mat_data(year,month,3.5,5.5,7.5,9.5,'N','E');
+        [Salt,Temp,Deep]=read_mat_data(year,month,12.5,12.5,115.5,115.5,'N','E');
         [C_org,A] = sound_speed(Salt,Temp,Deep);
         matrix_c = [matrix_c data2line(C_org(1,1,:))];
     end
@@ -22,30 +22,19 @@ for i = 1:1:L
     std_mat(:,i) = akima(Deep',matrix_c(:,i)',Standard_deep);
 end
 
-
-
-
 % 对C矩阵进行距平
 X = std_mat - mean(std_mat,2)*ones(1,L);
-
 C = X*X'/L;
 [EOF,E] = eig(C);
-
 E = fliplr(flipud(E));      %特征根
 EOF = fliplr(flipud(EOF));  %空间特征向量
 PC = EOF'*X;                %空间特征向量对应的时间系数（主成分）
-
 mean_c = mean(std_mat,2);   %平均声速（1列）
 mean_c = flipud(mean_c);
-
 alphi = inv(EOF)*(fliplr(flipud(std_mat))-mean_c*ones(1,L));
-
-
-
 approx_c_1 = mean_c ;
 approx_c_2 = mean_c + alphi(:,1).*EOF(:,1)+alphi(:,2).*EOF(:,2);
 approx_c_3 = mean_c + alphi(:,1).*EOF(:,1)+alphi(:,2).*EOF(:,2)+alphi(:,3).*EOF(:,3);
-
 
 
 
