@@ -32,7 +32,7 @@ PC = EOF'*X;                %空间特征向量对应的时间系数（主成分
 mean_c = mean(std_mat,2);   %平均声速（1列）
 mean_c = flipud(mean_c);
 alphi = inv(EOF)*(fliplr(flipud(std_mat))-mean_c*ones(1,L));
-approx_c_1 = mean_c ;
+approx_c_1 = mean_c + alphi(:,1).*EOF(:,1);
 approx_c_2 = mean_c + alphi(:,1).*EOF(:,1)+alphi(:,2).*EOF(:,2);
 approx_c_3 = mean_c + alphi(:,1).*EOF(:,1)+alphi(:,2).*EOF(:,2)+alphi(:,3).*EOF(:,3);
 
@@ -48,7 +48,7 @@ subplot(1,3,1);
 plot(real_data1,Deep,'r-');
 set(gca,'YDir','reverse');
 hold on;
-plot(approx_c_1,fliplr(Standard_deep),'bx');
+plot(approx_c_1,fliplr(Standard_deep),'bx-');
 xlabel('声速m/s');
 ylabel('深度m');
 legend('Org-data','1-stair','Location','southeast');
@@ -58,7 +58,7 @@ subplot(1,3,2);
 plot(real_data1,Deep,'r-');
 set(gca,'YDir','reverse');
 hold on;
-plot(approx_c_2,fliplr(Standard_deep),'bx');
+plot(approx_c_2,fliplr(Standard_deep),'bx-');
 xlabel('声速m/s');
 ylabel('深度m');
 legend('Org-data','2-stair','Location','southeast');
@@ -68,7 +68,7 @@ subplot(1,3,3);
 plot(real_data1,Deep,'r-');
 set(gca,'YDir','reverse');
 hold on;
-plot(approx_c_3,fliplr(Standard_deep),'bx');
+plot(approx_c_3,fliplr(Standard_deep),'bx-');
 xlabel('声速m/s');
 ylabel('深度m');
 legend('Org-data','3-stair','Location','southeast');
